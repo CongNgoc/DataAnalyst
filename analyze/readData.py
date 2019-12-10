@@ -45,7 +45,8 @@ def setOriginOfCar(value_of_element):
             result_value = "Japanese";
     return result_value
 
-def writeCSV(file_txt_input, file_csv_output):
+def writeCSV(file_txt_input):
+    file_csv_output = '../resource/CSV_output.csv';
     print("Start parse data!");
 
     data_result = [];
@@ -93,12 +94,12 @@ def writeCSV(file_txt_input, file_csv_output):
                     word = setOriginOfCar(word);
                     data_each_row.append(word);
                     data_each_row.append(decided_attr);
+
                 column_number = column_number + 1;
             csvwriter.writerow(data_each_row);
             data_result.append(data_each_row);
     print("Parse successful!");
     return data_result;
 
-file_txt_input = '../resource/cars_data.txt';
-file_csv_output = '../resource/CSV_output.csv';
-print(writeCSV(file_txt_input, file_csv_output);
+#file_txt_input = '../resource/cars_data.txt';
+#print(writeCSV(file_txt_input);
