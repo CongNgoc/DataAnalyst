@@ -58,6 +58,9 @@ def reduceArray(file_name):
         i = i + 1;
     print(diff_arr);
 
+def listToSet(diff_arr):
+    return set(diff_arr);
+
 def test():
     #diff_arr = [[1, 2, 3], [1, 2], [5,6,7]];
     diff_arr = [[1, 2, 3], [1, 2], [1, 2, 3, 4, 5], [1, 3], [2, 3, 4, 5], [2, 3], [2], [10, 11]]
@@ -99,12 +102,25 @@ def test():
         i = i + 1;
     print(diff_arr);
 
+def uniq(lst):
+    last = object()
+    for item in lst:
+        if item == last:
+            continue
+        yield item
+        last = item
 
+def sort_and_deduplicate(l):
+    return list(uniq(sorted(l, reverse=True)))
+
+def testSet():
+    arr = [3, 3, 2, 3, 5, 9, 5, 9, 3, 2, 1, 0, 10, 15, -1]
+    return set(arr)
 file_name = '../resource/cars_data.txt';
 # reduceArray(file_name);
-test();
-# print(processMatrix(file_name));
-
+# test();
+# print(listToSet(processMatrix(file_name)));
+print(sort_and_deduplicate(processMatrix(file_name)));
 
 #printData(file_name = '../resource/cars_data_little.txt');
 #read csv file  and Save to dict 
