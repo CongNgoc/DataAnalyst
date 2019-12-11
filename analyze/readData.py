@@ -88,7 +88,7 @@ def writeCSV(file_txt_input):
 
                 elif(column_number == 5):
                     decided_attr = setValueForMainAttribute(value_of_element = word, 
-                        value = 10, average_value = averages[4]);
+                        value = 15, average_value = averages[4]);
                                         
                 elif(column_number == 7):
                     word = setOriginOfCar(word);
