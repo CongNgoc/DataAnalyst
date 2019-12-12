@@ -67,8 +67,12 @@ def writeCSV(file_txt_input):
                         high_value = 30, average_value = averages[0]);
                     data_each_row.append(word);
                     
+                # elif(column_number == 1):
+                #     word = checkNullOfValue(word);
+                #     data_each_row.append(word);
                 elif(column_number == 1):
-                    word = checkNullOfValue(word);
+                    word = caculateValue(value_of_element = word, low_value = 4, 
+                        high_value = 6, average_value = 5);
                     data_each_row.append(word);
 
                 elif(column_number == 2):
@@ -88,7 +92,7 @@ def writeCSV(file_txt_input):
 
                 elif(column_number == 5):
                     decided_attr = setValueForMainAttribute(value_of_element = word, 
-                        value = 22, average_value = averages[4]);
+                        value = 10, average_value = averages[4]);
                                         
                 elif(column_number == 7):
                     word = setOriginOfCar(word);

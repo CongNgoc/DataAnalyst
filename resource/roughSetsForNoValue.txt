@@ -1,0 +1,3 @@
+Neu Vehicle weight la "Medium" Horsepower la "Medium" Engine displacement la "High" MPG la "Medium" thi Acceleration la "No"
+Neu Vehicle weight la "Medium" Horsepower la "High" Engine displacement la "High" MPG la "Low" thi Acceleration la "No"
+Neu Vehicle weight la "High" Horsepower la "High" Engine displacement la "High" MPG la "Low" thi Acceleration la "No"
