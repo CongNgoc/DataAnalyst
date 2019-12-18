@@ -125,7 +125,7 @@ def roughSets(roughSet_arr, diff_arr, file_output_name):
     header = ["MPG","Cylinders","Engine displacement","Horsepower",
         "Vehicle weight","Origin of car","Acceleration"];
 
-    # Chon ra nhung header va sap xep lai
+    # Choose header add to result
     res_header = [];
     for index in diff_arr:
         res_header.append(header[index]);
@@ -157,5 +157,5 @@ def runToAnalyzeData():
  
 
 
-
+#ANALYZE DATA 
 runToAnalyzeData()
