@@ -20,7 +20,7 @@ def setValueForMainAttribute(value_of_element, value, average_value):
     rresult_value = "";
     value_of_element = float(value_of_element) if(value_of_element != "NA") else float(average_value);
 
-    if(value_of_element < value):
+    if(value_of_element > value):
         result_value = "No";
     else:
         result_value = "Yes";
@@ -71,8 +71,8 @@ def writeCSV(file_txt_input):
                 #     word = checkNullOfValue(word);
                 #     data_each_row.append(word);
                 elif(column_number == 1):
-                    word = caculateValue(value_of_element = word, low_value = 4, 
-                        high_value = 6, average_value = 5);
+                    word = caculateValue(value_of_element = word, low_value = 5, 
+                        high_value = 7, average_value = 6);
                     data_each_row.append(word);
 
                 elif(column_number == 2):
@@ -92,7 +92,7 @@ def writeCSV(file_txt_input):
 
                 elif(column_number == 5):
                     decided_attr = setValueForMainAttribute(value_of_element = word, 
-                        value = 10, average_value = averages[4]);
+                        value = 15, average_value = averages[4]);
                                         
                 elif(column_number == 7):
                     word = setOriginOfCar(word);
@@ -105,5 +105,5 @@ def writeCSV(file_txt_input):
     print("Parse successful!");
     return data_result;
 
-#file_txt_input = '../resource/cars_data.txt';
-#print(writeCSV(file_txt_input);
+# file_txt_input = '../resource/cars_data.txt';
+# print(writeCSV(file_txt_input);

@@ -1,0 +1,6 @@
+graphviz (use command "sudo apt-get update" to fix the error for graphviz)
+pandas
+sklearn
+pydotplus
+matplotlib
+
