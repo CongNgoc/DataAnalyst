@@ -11,7 +11,8 @@
 	pip3 install pydotplus
 	pip3 install matplotlib
 
-	Note: If appear error with graphviz. Please run command "sudo apt-get install graphviz" in Terminal   to fix this error.
+	Note: If appear error with graphviz. Please run command "sudo apt-get install graphviz" in <br/>
+	Terminal to fix this error.
 ### *HOW TO USE:*
 	B1: Go to analyze folder
     B2: Run command: python3 analyzeData.py to RUN Rought Set algorithm
